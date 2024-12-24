@@ -12,3 +12,6 @@
   box-sizing: border-box;
   font-family: "lalazar", sans-serif;
 }
+body {
+  font-family: "roboto";
+}

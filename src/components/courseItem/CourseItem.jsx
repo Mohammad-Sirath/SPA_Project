@@ -12,7 +12,7 @@ function CourseItem({ id, title, img, text }) {
         <Card.Text>{text}</Card.Text>
         <Button variant="primary">
           <Link to={`/course/${id}`} className="buy-btn">
-            خرید دوره
+            Buy Course
           </Link>
         </Button>
       </Card.Body>

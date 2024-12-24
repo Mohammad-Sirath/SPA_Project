@@ -1,0 +1,49 @@
+/* Custom styles for Navbar */
+.custom-navbar {
+  background-color: rgb(243, 243, 243); /* Light gray background */
+  font-family: "Poppins", sans-serif; /* Use Poppins font */
+}
+
+/* Centering navbar links */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-link {
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #333;
+  text-decoration: none; /* Remove underline */
+  position: relative; /* For positioning the underline */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Active link animation with underline and color transition */
+.nav-link:hover {
+  color: #4caf50; /* Change text color on hover/active */
+}
+
+/* Underline effect */
+.nav-link::before {
+  content: ""; /* Create an empty pseudo-element */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #4caf50; /* Blue underline */
+  transform: scaleX(0); /* Start with no width */
+  transform-origin: bottom right; /* Start the animation from the right */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Trigger underline animation when hovered or active */
+.nav-link:hover::before,
+.nav-link.active::before {
+  transform: scaleX(1); /* Expand the underline */
+  transform-origin: bottom left; /* End the animation to the left */
+}

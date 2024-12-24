@@ -9,46 +9,31 @@ import "./Navbar.css";
 import { isLogin } from "../../utils";
 
 function MyNavbar() {
-  const [loginStatus, setLoginStatus] = useState(isLogin() ? "خروج" : "ورود");
+  const [loginStatus, setLoginStatus] = useState(
+    isLogin() ? "Log out" : "Log in"
+  );
 
-  // Update login status on initial load
   useEffect(() => {
-    setLoginStatus(isLogin() ? "خروج" : "ورود");
+    setLoginStatus(isLogin() ? "Log out" : "Log in");
   }, []);
 
-  // Function to delete cookies
   const deleteCookies = () => {
     document.cookie =
-      "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/"; // Deletes the cookie by setting an expired date
-    document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/"; // Delete any other relevant cookies if needed
+      "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+    document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
   };
 
   const logoutHandler = () => {
-    // Delete cookies upon logout
     deleteCookies();
-
-    // Optionally, clear any session storage or local storage data
-    localStorage.removeItem("username"); // or sessionStorage.removeItem("username");
-
-    // Update the login status to reflect logout
-    setLoginStatus("ورود");
+    localStorage.removeItem("username");
+    setLoginStatus("Log in");
   };
 
   const expand = "md";
 
   return (
-    <Navbar
-      style={{ backgroundColor: "rgb(186, 182, 253)" }}
-      expand={expand}
-      className="mb-3"
-    >
+    <Navbar expand={expand} className="mb-3 custom-navbar">
       <Container>
-        <Navbar.Brand
-          style={{ fontFamily: "Lalezar", fontSize: "25px" }}
-          href="#"
-        >
-          نکست وان کد
-        </Navbar.Brand>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-${expand}`}
@@ -61,22 +46,22 @@ function MyNavbar() {
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav className="justify-content-end flex-grow-1 pe-3">
+            <Nav className="justify-content-center flex-grow-1 pe-3">
               <NavLink to="/" className="nav-link">
-                صفحه اصلی
+                Home
               </NavLink>
               <NavLink to="/about" className="nav-link">
-                درباره ما{" "}
+                About Us
               </NavLink>
               <NavLink to="/articles" className="nav-link">
-                مقالات
+                Articles
               </NavLink>
               <NavLink to="/panel" className="nav-link">
-                پنل
+                Panel
               </NavLink>
               <NavLink
-                to={isLogin() ? "/" : "/login"} // Link to login page when logged out
-                onClick={isLogin() ? logoutHandler : null} // Log out when clicking "خروج"
+                to={isLogin() ? "/" : "/login"}
+                onClick={isLogin() ? logoutHandler : null}
                 className="nav-link"
               >
                 {loginStatus}
