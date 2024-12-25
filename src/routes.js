@@ -15,7 +15,14 @@ const allRoutes = [
     path: "/articles/*",
     element: <Articles />,
     children: [
-      { path: "php", element: <h1 className="wrapper">Php articles</h1> },
+      {
+        path: "php",
+        element: (
+          <h1 className="wrapper">
+            Php articles <p></p>
+          </h1>
+        ),
+      },
       { path: "react", element: <h1 className="wrapper">React articles</h1> },
       {
         path: "js",
