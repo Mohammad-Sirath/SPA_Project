@@ -4,8 +4,12 @@ import "./Login.css";
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function Login() {
+  useEffect(() => {
+    alert('username = "admin" and password = "12345"');
+  }, []);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -16,10 +20,10 @@ function Login() {
       navigate("/panel");
     } else {
       Swal.fire({
-        title: "خطا",
-        text: "بسورد یا ایمیل اشتباه است",
+        title: "Error",
+        text: "Incorrect username or password",
         icon: "error",
-        confirmButtonText: "بستن",
+        confirmButtonText: "Close",
       });
     }
   };

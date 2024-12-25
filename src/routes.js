@@ -7,6 +7,7 @@ import Panel from "./pages/panel/Panel";
 import Articles from "./pages/article/Articles";
 import Setting from "./pages/setting/Setting";
 import PrivateRoute from "./components/PrivateRoute";
+
 const allRoutes = [
   { path: "/", element: <Home /> },
   { path: "/about", element: <About /> },
@@ -42,4 +43,5 @@ const allRoutes = [
     ),
   },
 ];
+
 export default allRoutes;
