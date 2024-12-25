@@ -7,7 +7,7 @@ function Articles() {
   return (
     <div>
       <MyNavbar />
-      <h1 className="wrapper">صفحه مقالات</h1>
+      <h1 className="wrapper">Articles Page!</h1>
       <hr />
       <div className="btnContainer">
         <Link to="php" className="linkBtn">

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import "../../index.css";
 import MyNavbar from "../../components/navbar/Navbar";
 import progImage from "../../assets/images/programming2.png";
 import { Container, Row, Col } from "react-bootstrap";
@@ -34,7 +35,7 @@ function Home() {
           </Col>
         </Row>
         <Row className="my-5">
-          <h2 className="py-4">Learning Programs</h2>
+          <h2 className="py-4 lalezar">Learning Programs</h2>
           {courses.map((course) => (
             <Col key={course.id} md={6} lg={4} xl={3} className="py-3">
               <CourseItem {...course} />

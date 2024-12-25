@@ -8,7 +8,7 @@ function CourseItem({ id, title, img, text }) {
     <Card>
       <Card.Img variant="top" src={img} />
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title className="lalezar">{title}</Card.Title>
         <Card.Text>{text}</Card.Text>
         <Button variant="primary">
           <Link to={`/course/${id}`} className="buy-btn">
