@@ -1,0 +1,21 @@
+.error-container {
+  padding: 50px 0;
+}
+
+.error-container h1 {
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.error-container h2 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.error-container p {
+  font-size: 18px;
+}
+
+.error-container .btn {
+  margin-top: 20px;
+}

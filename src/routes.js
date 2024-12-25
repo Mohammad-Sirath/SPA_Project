@@ -7,9 +7,11 @@ import Panel from "./pages/panel/Panel";
 import Articles from "./pages/article/Articles";
 import Setting from "./pages/setting/Setting";
 import PrivateRoute from "./components/PrivateRoute";
+import NotFound from "./pages/notFound/NotFound";
 
 const allRoutes = [
   { path: "/", element: <Home /> },
+  { path: "/notFound", element: <NotFound /> },
   { path: "/about", element: <About /> },
   {
     path: "/articles/*",

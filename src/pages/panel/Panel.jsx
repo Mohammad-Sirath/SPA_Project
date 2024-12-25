@@ -22,10 +22,10 @@ function Panel() {
               <Nav.Link as={Link} to="/articles" className="text-dark mb-2">
                 Articles
               </Nav.Link>
-              <Nav.Link as={Link} to="/profile" className="text-dark mb-2">
+              <Nav.Link as={Link} to="/notFound" className="text-dark mb-2">
                 Profile
               </Nav.Link>
-              <Nav.Link as={Link} to="/settings" className="text-dark mb-2">
+              <Nav.Link as={Link} to="/notFound" className="text-dark mb-2">
                 Settings
               </Nav.Link>
             </Nav>
