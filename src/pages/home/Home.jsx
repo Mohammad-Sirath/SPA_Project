@@ -19,7 +19,7 @@ function Home() {
         <Row className="my-5 align-items-center">
           <Col lg={6}>
             <h1 className="title-name">
-              Programming with <strong>Mohammad</strong>
+              Programming with <strong className="title-name">Mohammad</strong>
             </h1>
             <p style={{ textAlign: "justify" }}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -34,7 +34,7 @@ function Home() {
             <img src={progImage} className="img-fluid" />
           </Col>
         </Row>
-        <Row className="my-5">
+        <Row id="learning-programs" className="my-5">
           <h2 className="py-4 lalezar">Learning Programs</h2>
           {courses.map((course) => (
             <Col key={course.id} md={6} lg={4} xl={3} className="py-3">

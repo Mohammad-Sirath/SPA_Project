@@ -1,0 +1,47 @@
+/* Background color and shadow for the introduction section */
+.about-intro {
+  background-color: #f8f9fa; /* Light background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Shadow and rounded corners for each section */
+.about-card {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Text colors */
+h1,
+h3 {
+  color: #343a40; /* Dark text for headings */
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Spacing adjustments */
+.mb-4 {
+  margin-bottom: 30px;
+}
+
+.p-5 {
+  padding: 3rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-primary {
+  color: #007bff; /* Blue color for title */
+}
+
+/* Button styling */
+button.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: bold;
+}
