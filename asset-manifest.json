@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/SPA_Project/static/css/main.2ed266da.css",
+    "main.js": "/SPA_Project/static/js/main.f39a5192.js",
+    "static/media/Lalezar.ttf": "/SPA_Project/static/media/Lalezar.241ca811c53de4ed36a4.ttf",
+    "static/media/programming2.png": "/SPA_Project/static/media/programming2.c45a0bfba43b96579b96.png",
+    "static/media/Yekan.ttf": "/SPA_Project/static/media/Yekan.012789e6e9f8b9a4929f.ttf",
+    "index.html": "/SPA_Project/index.html",
+    "main.2ed266da.css.map": "/SPA_Project/static/css/main.2ed266da.css.map",
+    "main.f39a5192.js.map": "/SPA_Project/static/js/main.f39a5192.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ed266da.css",
+    "static/js/main.f39a5192.js"
+  ]
+}
